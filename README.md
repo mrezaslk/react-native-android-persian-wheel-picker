@@ -5,12 +5,20 @@ A customizable Persian (Jalali) wheel picker component for React Native Android 
 ## Installation
 
 ```bash
+# Install the package
 npm install react-native-android-persian-wheel-picker
 # or
 yarn add react-native-android-persian-wheel-picker
-```
 
-The package includes all necessary dependencies, including `react-native-wheel-pick`.
+# Install the required peer dependency
+npm install react-native-wheel-pick
+# or
+yarn add react-native-wheel-pick
+
+# For React Native >= 0.60, the linking is automatic
+# For React Native < 0.60, you need to link manually:
+react-native link react-native-wheel-pick
+```
 
 ## Font Configuration
 
@@ -28,7 +36,7 @@ To support Persian (or any other custom) fonts in the wheel picker, you need to 
 Make sure to:
 
 1. Place your font file in the `android/app/src/main/res/font/` directory
-2. Reference the font file name (without extension) in the `fontFamily` attribute
+2. Reference the font file name (without extension) in the `wheel_font_path` attribute
 3. If the `font` directory doesn't exist, create it first
 
 Without this configuration, the wheel picker will not display Persian text correctly.
@@ -95,11 +103,18 @@ const MyComponent = () => {
 If you encounter any issues with the installation:
 
 1. Make sure you have the latest version of React Native installed
-2. Try cleaning your project:
+2. Make sure you have installed both packages:
+   ```bash
+   npm install react-native-android-persian-wheel-picker react-native-wheel-pick
+   # or
+   yarn add react-native-android-persian-wheel-picker react-native-wheel-pick
+   ```
+3. Try cleaning your project:
    ```bash
    cd android && ./gradlew clean
    cd .. && npm start -- --reset-cache
    ```
+4. If you see the error "WheelCurvedPicker was not found in the UIManager", make sure you have properly installed and linked `react-native-wheel-pick`
 
 ## License
 
