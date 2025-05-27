@@ -1,16 +1,9 @@
 import { StyleSheet, View, ViewStyle, TextStyle } from "react-native";
 import React, { useState } from "react";
 import { Picker } from "react-native-wheel-pick";
+import { persianToEnglish, toFarsiDigits } from "../utils";
 
 export interface PersianWheelPickerProps {
-  /**
-   * Initial selected date
-   */
-  initialDate?: {
-    year: number;
-    month: number;
-    day: number;
-  };
   /**
    * Range of years to display
    */
@@ -64,7 +57,6 @@ const defaultMonthNames = [
 ];
 
 const PersianWheelPicker: React.FC<PersianWheelPickerProps> = ({
-  initialDate = { year: 1370, month: 1, day: 1 },
   yearRange = { start: 1330, end: 1400 },
   containerStyle,
   pickerStyle,
@@ -74,9 +66,9 @@ const PersianWheelPicker: React.FC<PersianWheelPickerProps> = ({
   monthNames = defaultMonthNames,
   onChange,
 }) => {
-  const [day, setDay] = useState(initialDate.day);
-  const [month, setMonth] = useState(monthNames[initialDate.month - 1]);
-  const [year, setYear] = useState(initialDate.year);
+  const [day, setDay] = useState(1);
+  const [month, setMonth] = useState(monthNames[0]);
+  const [year, setYear] = useState(yearRange.start);
 
   const dayList = Array(31)
     .fill(0)
@@ -94,11 +86,12 @@ const PersianWheelPicker: React.FC<PersianWheelPickerProps> = ({
     const updatedYear = newYear ?? year;
     const updatedMonth = newMonth ?? month;
     const updatedDay = newDay ?? day;
-
+    const converYearToEnglish = persianToEnglish(updatedYear);
+    const convertDayToEnglish = persianToEnglish(updatedDay);
     onChange?.({
-      year: updatedYear,
+      year: converYearToEnglish,
       month: monthNames.indexOf(updatedMonth) + 1,
-      day: updatedDay,
+      day: convertDayToEnglish,
     });
   };
 
@@ -166,27 +159,14 @@ export default PersianWheelPicker;
 const styles = StyleSheet.create({
   container: {
     height: "100%",
-    backgroundColor: "#2E2E2E",
-    justifyContent: "center",
   },
   row: {
     flexDirection: "row",
     justifyContent: "space-between",
   },
-  picker: {
-    backgroundColor: "#2E2E2E",
-  },
+  picker: {},
   col: {
     flex: 1,
   },
-  itemStyle: {
-    fontSize: 14,
-  },
+  itemStyle: {},
 });
-
-const toFarsiDigits = function (str: string) {
-  return str.replace(/[0-9]/g, function (w: string | number) {
-    var persian = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
-    return persian[Number(w)];
-  });
-};

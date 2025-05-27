@@ -3,12 +3,18 @@
   "version": "1.0.0",
   "description": "A customizable Persian (Jalali) date picker component for React Native applications(android)",
   "main": "dist/index.js",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
     "test": "jest"
   },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "keywords": [
     "react-native",
     "persian",
@@ -20,9 +26,11 @@
   "author": "Reza Salek",
   "license": "MIT",
   "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-native": ">=0.60.0",
-    "react-native-wheel-pick": ">=1.0.0"
+    "react": ">=16.8.0 || >=17.0.0 || >=18.0.0",
+    "react-native": ">=0.60.0"
+  },
+  "dependencies": {
+    "react-native-wheel-pick": "^1.2.4"
   },
   "devDependencies": {
     "@types/jest": "^29.0.0",
@@ -33,10 +41,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rezaslk/react-native-android-persian-wheel-picker"
+    "url": "https://github.com/mrezaslk/react-native-android-persian-wheel-picker"
   },
   "bugs": {
-    "url": "https://github.com/rezaslk/react-native-android-persian-wheel-picker/issues"
+    "url": "https://github.com/mrezaslk/react-native-android-persian-wheel-picker/issues"
   },
-  "homepage": "https://github.com/rezaslk/react-native-android-persian-wheel-picker#readme"
+  "homepage": "https://github.com/mrezaslk/react-native-android-persian-wheel-picker#readme"
 }

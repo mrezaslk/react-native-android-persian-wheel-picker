@@ -5,6 +5,7 @@
     "lib": ["es6", "dom"],
     "declaration": true,
     "outDir": "./dist",
+    "rootDir": "src", 
     "strict": true,
     "jsx": "react-native",
     "esModuleInterop": true,
