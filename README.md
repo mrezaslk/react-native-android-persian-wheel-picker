@@ -38,7 +38,7 @@ Without this configuration, the wheel picker will not display Persian text corre
 
 ## Usage
 
-![Persian Wheel Picker Demo](./assets/demo.png)
+![Persian Wheel Picker Demo](./src/assets/calendar.jpg)
 
 ```tsx
 import PersianWheelPicker from 'react-native-android-persian-wheel-picker';
