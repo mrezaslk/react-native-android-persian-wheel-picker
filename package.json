@@ -1,6 +1,6 @@
 {
   "name": "react-native-android-persian-wheel-picker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A customizable Persian (Jalali) date picker component for React Native applications(android)",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -30,8 +30,7 @@
     "react-native": ">=0.60.0",
     "react-native-wheel-pick": "^1.2.4"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/jest": "^29.0.0",
     "@types/react": "^18.3.23",
