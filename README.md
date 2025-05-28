@@ -1,14 +1,28 @@
 # 📆 React Native Android Persian Wheel Picker
 
-A customizable Persian (Jalali) wheel picker component for React Native Android applications.
+A customizable **Persian (Jalali) calendar wheel picker**  component for React Native Android applications.
 
+> تقویم فارسی (شمسی)  برای اپلیکیشن‌های اندرویدی نوشته‌شده با React Native
+
+## ✨ Features
+
+- ✅ Fully customizable Jalali (Shamsi) calendar picker
+- 📱 Optimized for Android UI — not like `@react-native-picker/picker`
+- 🧠 Simple logic, easy integration
+- 🎨 Font, style, and color customization
+- 💬 Supports Persian characters out of the box
+
+---
 ## Installation
+
+🔗 This package uses react-native-wheel-pick as a peer dependency.
 
 ```bash
 # Install the package
 npm install react-native-android-persian-wheel-picker
 # or
 yarn add react-native-android-persian-wheel-picker
+
 
 # Install the required peer dependency
 npm install react-native-wheel-pick
@@ -20,7 +34,7 @@ yarn add react-native-wheel-pick
 react-native link react-native-wheel-pick
 ```
 
-## Font Configuration
+## Font Configuration (for Persian)
 
 To support Persian (or any other custom) fonts in the wheel picker, you need to define the font in your Android styles. Add the following to your `android/app/src/main/res/values/styles.xml` file:
 
@@ -115,6 +129,13 @@ If you encounter any issues with the installation:
    cd .. && npm start -- --reset-cache
    ```
 4. If you see the error "WheelCurvedPicker was not found in the UIManager", make sure you have properly installed and linked `react-native-wheel-pick`
+
+
+## Keywords
+
+  react-native, persian, jalali, shamsi, datepicker, calendar, wheel picker, android, react-native-date, react-native-calendar, تاریخ شمسی, تقویم فارسی, ری‌اکت نیتیو
+
+
 
 ## License
 
