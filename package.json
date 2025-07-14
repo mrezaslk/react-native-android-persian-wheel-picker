@@ -1,7 +1,7 @@
 {
   "name": "react-native-android-persian-wheel-picker",
-  "version": "1.0.2",
-  "description": "A customizable Persian (Jalali) date picker component for React Native applications(android)",
+  "version": "1.0.3",
+  "description": "React Native Android Persian Wheel Picker — customizable Jalali (Shamsi) date picker component for Android apps using React Native.",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,11 +17,18 @@
   ],
   "keywords": [
     "react-native",
+    "react native",
     "persian",
     "jalali",
+    "shamsi",
     "date-picker",
     "calendar",
-    "wheel-picker"
+    "datepicker",
+    "wheel-picker",
+    "persian datepicker",
+    "react-native persian calendar",
+    "react native android date picker",
+    "android wheel picker"
   ],
   "author": "Reza Salek",
   "license": "MIT",

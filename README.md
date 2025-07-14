@@ -1,6 +1,9 @@
-# 📆 React Native Android Persian Wheel Picker
+# React Native Android Persian Wheel Picker
 
-A customizable **Persian (Jalali) calendar wheel picker**  component for React Native Android applications.
+A Persian (Jalali) calendar wheel picker for React Native Android apps.
+
+[![npm version](https://badge.fury.io/js/react-native-android-persian-wheel-picker.svg)](https://www.npmjs.com/package/react-native-android-persian-wheel-picker)
+[![GitHub](https://img.shields.io/badge/GitHub-Repo-blue)](https://github.com/mrezaslk/react-native-android-persian-wheel-picker)
 
 > تقویم فارسی (شمسی)  برای اپلیکیشن‌های اندرویدی نوشته‌شده با React Native
 
