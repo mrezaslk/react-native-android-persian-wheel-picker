@@ -37,7 +37,6 @@
     "react-native": ">=0.60.0",
     "react-native-wheel-pick": "^1.2.4"
   },
-  "dependencies": {},
   "devDependencies": {
     "@types/jest": "^29.0.0",
     "@types/react": "^18.3.23",
